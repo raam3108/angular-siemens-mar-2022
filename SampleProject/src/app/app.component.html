@@ -1,0 +1,4 @@
+<emiCalculator-component (onResultCalculated)="onEmiResultCalculated($event)"></emiCalculator-component>
+<emiSummary-component [emi]="monthlyEmi" [amount]="totalAmount" [interest]="simpleInterest"></emiSummary-component>
+
+<router-outlet></router-outlet>
