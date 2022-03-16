@@ -1,0 +1,36 @@
+
+<table>
+    <tr>
+        <td>
+            <label-component [message]="'UserName'"></label-component>
+        </td> 
+        <td>
+            <input  type="text" [(ngModel)]="userName"> 
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <label-component [message]="'Password'"></label-component>
+        </td>
+        <td>
+            <input type="password" 
+             [(ngModel)]="password"> 
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <label-component [message]="'Email'"></label-component>
+        </td>
+        <td>
+            <input type="text" [(ngModel)]="email"> 
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <button (click)="signup()">Login</button>
+        </td>
+        <td>
+            <button (click)="clear()">Clear</button>
+        </td>
+    </tr>
+</table>

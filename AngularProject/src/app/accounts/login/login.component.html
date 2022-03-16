@@ -1,0 +1,30 @@
+
+<table>
+    <tr>
+        <td>
+            <label-component [message]="'UserName'"></label-component>
+        </td> 
+        <td>
+            <input #onUserNameEditText type="text" (input)="onUserNameEdit(onUserNameEditText.value)"
+            [value]="userName"> 
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <label-component [message]="'Password'"></label-component>
+        </td>
+        <td>
+            <input #passwordTextBox type="password" 
+            (input)="onPasswordEdit(passwordTextBox.value)"
+            [value]="password"> 
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <button (click)="login()">Login</button>
+        </td>
+        <td>
+            <button (click)="clear()">Clear</button>
+        </td>
+    </tr>
+</table>
