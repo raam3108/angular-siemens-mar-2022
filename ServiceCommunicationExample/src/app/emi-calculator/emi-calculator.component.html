@@ -1,0 +1,29 @@
+<table>
+    <tr>
+        <td>
+        <label>Amount</label>
+        <input  [(ngModel)]="amount" type="text">
+        </td>
+    </tr>
+    <tr>
+        <td>
+        <label>Tenure</label>
+        <input [(ngModel)]="tenure" type="text">
+        </td>
+    </tr>
+    <tr>
+        <td>
+        <label>Interest Rate</label>
+        <input [(ngModel)]="rate" type="text">
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <button (click)="onClick()">CalculateEmi</button>
+            <button (click)="onClear()">CLear</button>
+        </td>
+    </tr>
+</table>
+
+
+
