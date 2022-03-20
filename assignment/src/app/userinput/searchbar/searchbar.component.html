@@ -1,0 +1,7 @@
+<form>
+    <input #searchBar type="text" [value]="filterText" placeholder="Search..."  (input)="onTextInput(searchBar.value)"/>
+    <p>
+      <input #checkBox type="checkbox" name="first" [(ngModel)]="inStockOnly" (change)="onTextInput(searchBar.value)" />
+      Only show products in stock
+    </p>
+</form>

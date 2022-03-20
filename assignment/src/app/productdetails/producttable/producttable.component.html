@@ -1,0 +1,26 @@
+<table>
+    <thead>
+      <tr>
+        <th><h2>Name</h2></th>
+        <th><h2>Price</h2></th>
+      </tr>
+    </thead>
+    <product-category-row-component  *ngFor="let category of categories " >
+        <label>
+            <h3>
+                {{category.category}}
+            </h3>
+        </label>
+        <br>
+        <product-row-component *ngFor="let product of products" >
+            <tr *ngIf="product.category==category.category">
+                <h2>
+                    <td> {{product.name}}</td>
+                    <td> {{product.price}}</td>
+                </h2>
+                
+            </tr>
+            <br>
+        </product-row-component>
+    </product-category-row-component>
+  </table>
