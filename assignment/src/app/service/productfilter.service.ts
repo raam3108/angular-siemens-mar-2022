@@ -36,9 +36,14 @@ export class ProductFilter{
     checkStock(filterText:string,filterCheck:boolean):any{
         
         if (!filterCheck){
-            return this.PRODUCTS.filter(item=>item.name.includes(filterText));
+            if(filterText!=''){
+                return this.PRODUCTS.filter(item=>item.name.includes(filterText));
+
+            }
+            return this.PRODUCTS;
+            
         }
-        this.productshow = this.PRODUCTS.filter(item=>item.stocked==filterCheck && item.name.includes(filterText));
+        return this.PRODUCTS.filter(item=>item.stocked==filterCheck && item.name.includes(filterText));
     }
 
     getCategories(){

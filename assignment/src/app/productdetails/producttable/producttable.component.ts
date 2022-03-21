@@ -11,7 +11,7 @@ export class ProducttableComponent implements OnInit {
 
   
   subscriptionRef:any=null;
-  
+
   constructor(private productFilter:ProductFilter,private communicationService:CommunicationService) { }
 
   categories = this.productFilter.getCategories();
