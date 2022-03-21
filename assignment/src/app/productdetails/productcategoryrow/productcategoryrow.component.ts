@@ -9,17 +9,13 @@ import { ProductFilter } from 'src/app/service/productfilter.service';
 export class ProductcategoryrowComponent implements OnInit {
 
 
-  constructor(private productFilter:ProductFilter) { }
+  constructor() { }
 
-  @Output()
-  getUniqueCategories  = new EventEmitter<any>();
+ 
 
   ngOnInit(): void {
   }
 
-  getCategories(){
-    let categories = this.productFilter.getCategories();
-    this.getUniqueCategories.emit(categories)
-  }
+
 
 }
